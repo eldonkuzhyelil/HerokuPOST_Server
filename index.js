@@ -1,11 +1,9 @@
 // Import packages
 const express = require('express')
-const morgan = require('morgan')
+
 const bodyParser = require('body-parser')
 // App
 const app = express()
-// Morgan
-app.use(morgan('tiny'))
 
 app.use(bodyParser.json())
 app.use(
