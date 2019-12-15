@@ -5,7 +5,7 @@ let should = require("should");
 
 // This agent refers to PORT where program is runninng.
 
-var server = supertest.agent("https://agile-reef-94273.herokuapp.com/");
+var server = supertest.agent("https://agile-reef-94273.herokuapp.com");
 
 // UNIT test begin
 
