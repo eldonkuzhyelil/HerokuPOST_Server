@@ -9,7 +9,7 @@ var server = supertest.agent("https://agile-reef-94273.herokuapp.com/");
 
 // UNIT test begin
 
-describe("SAMPLE unit test",function(){
+describe("Unit tests",function(){
 
   // #1 should return home page
 
@@ -19,7 +19,7 @@ describe("SAMPLE unit test",function(){
     server
     .get("/")
     .expect("Content-type",/json/)
-    .expect(400) // THis is HTTP response
+    .expect(200) // THis is HTTP response
     .end(function(err,res){
          
       // HTTP status should be 200     
@@ -39,6 +39,7 @@ describe("SAMPLE unit test",function(){
     .expect("Content-type",/json/)
     .expect(200)
     .end(function(err,res){
+      console.log(res.body.result)
       res.status.should.equal(200);
       //res.body.error.should.equal(false);
       res.body.result.should.equal(13); //8+50 = 58 -> 5+8=13
