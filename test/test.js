@@ -39,6 +39,7 @@ describe("Unit tests",function(){
     .expect("Content-type",/json/)
     .expect(200)
     .end(function(err,res){
+      console.log("res.body.result")
       console.log(res.body.result)
       res.status.should.equal(200);
       //res.body.error.should.equal(false);
