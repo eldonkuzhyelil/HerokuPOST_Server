@@ -2,10 +2,10 @@
   "name": "HerokuPOST_Server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "Server.js",
   "scripts": {
 	  "dev": "node_modules/.bin/nodemon -e js",
-	  "start": "node server.js",
+	  "start": "node Server.js",
 	  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
