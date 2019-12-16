@@ -14,7 +14,7 @@ app.use(
 
 // First route
 app.get('/', (req, res) => {
-    res.json({ message: 'AutoDeployment enabled! Send POST with JSON format:{"address":{"colorKeys":["A","G","Z"],"values":[-20,4]},"meta":{"digits":33,"processingPattern":"d{5}+[a-z&$§]"}} '})
+    res.json({ message: 'AutoDeployment enabled2! Send POST with JSON format:{"address":{"colorKeys":["A","G","Z"],"values":[-20,4]},"meta":{"digits":33,"processingPattern":"d{5}+[a-z&$§]"}} '})
 })
 
 app.post('/', (req, res) => {
